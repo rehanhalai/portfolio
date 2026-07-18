@@ -682,20 +682,24 @@ a:hover {
 }
 
 @media (max-width: 1024px) {
-  .footer__marquee {
+  .footer__marquee-track {
     font-size: 4rem;
   }
   .footer__cta {
-    font-size: 3rem;
+    font-size: 3.25rem;
   }
 }
 
 @media (max-width: 768px) {
-  .footer__marquee {
+  .footer__marquee-track {
     font-size: 2.5rem;
   }
   .footer__cta {
     font-size: 2rem;
+  }
+  .cta-icon {
+    bottom: -8px;
+    right: -24px;
   }
   .footer__bottom {
     flex-direction: column;
