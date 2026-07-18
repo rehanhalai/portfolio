@@ -303,6 +303,28 @@ site-header, site-footer {
   letter-spacing: 0.05em;
 }
 
+.hero-description {
+  margin-top: var(--space-8);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--ink-secondary);
+  max-width: 500px;
+}
+
+.hero-description p {
+  margin-bottom: var(--space-4);
+}
+
+.hero-cta {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  color: var(--ink);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
 .hero-art-svg path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
