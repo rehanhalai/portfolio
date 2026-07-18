@@ -19,3 +19,50 @@ class SiteHeader extends HTMLElement {
 }
 
 customElements.define('site-header', SiteHeader);
+
+class SiteFooter extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+      <footer class="footer fade-entry" id="contact">
+        <div class="footer__banner">
+          <div class="footer__marquee-container" aria-hidden="true">
+            <div class="footer__marquee-track">
+              <!-- First Set -->
+              <span class="marquee-text">Let's create something together</span>
+              <a href="mailto:hello@rehanhalai.com" class="footer__cta" tabindex="-1">
+                EMAIL ME <img src="icons/click.svg" class="cta-icon" alt="" aria-hidden="true" />
+              </a>
+              <span class="marquee-text">Let's create something together</span>
+              <a href="mailto:hello@rehanhalai.com" class="footer__cta" tabindex="-1">
+                EMAIL ME <img src="icons/click.svg" class="cta-icon" alt="" aria-hidden="true" />
+              </a>
+              <!-- Second Set (Duplicate for seamless loop) -->
+              <span class="marquee-text">Let's create something together</span>
+              <a href="mailto:hello@rehanhalai.com" class="footer__cta" tabindex="-1">
+                EMAIL ME <img src="icons/click.svg" class="cta-icon" alt="" aria-hidden="true" />
+              </a>
+              <span class="marquee-text">Let's create something together</span>
+              <a href="mailto:hello@rehanhalai.com" class="footer__cta" tabindex="-1">
+                EMAIL ME <img src="icons/click.svg" class="cta-icon" alt="" aria-hidden="true" />
+              </a>
+            </div>
+          </div>
+          <!-- Screen reader text and actual focusable link -->
+          <a href="mailto:hello@rehanhalai.com" class="sr-only">Let's create something together. Email me.</a>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__legal">
+            <span class="footer__logo">REHAN HALAI &copy;</span>
+          </div>
+          <div class="footer__links">
+            <a href="https://linkedin.com" target="_blank" class="link-hover">LINKEDIN</a> &bull;
+            <a href="https://github.com/rehanhalai" target="_blank" class="link-hover">GITHUB</a>
+          </div>
+        </div>
+      </footer>
+    `;
+  }
+}
+
+customElements.define('site-footer', SiteFooter);

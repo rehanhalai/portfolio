@@ -142,7 +142,7 @@ a:hover {
 }
 
 /* --- HEADER / TOP BAR --- */
-site-header {
+site-header, site-footer {
   display: contents;
 }
 
