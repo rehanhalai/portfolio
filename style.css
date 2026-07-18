@@ -142,6 +142,10 @@ a:hover {
 }
 
 /* --- HEADER / TOP BAR --- */
+site-header {
+  display: contents;
+}
+
 .header {
   position: sticky;
   top: 0;
@@ -164,6 +168,20 @@ a:hover {
   text-transform: uppercase;
   color: var(--ink);
   white-space: nowrap;
+}
+
+.header__nav {
+  display: flex;
+  gap: var(--space-6);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.header__nav a {
+  color: var(--ink);
+  text-decoration: none;
 }
 
 .status {
@@ -499,12 +517,17 @@ a:hover {
     display: none;
   }
 
-  .status {
-    font-size: 0.6875rem;
+  .wordmark__secondary {
+    display: none;
   }
 
-  .status-time {
+  .status {
     display: none;
+  }
+
+  .header__nav {
+    gap: var(--space-4);
+    font-size: 0.75rem;
   }
 
   .site-container {

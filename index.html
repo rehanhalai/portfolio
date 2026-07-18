@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Rehan Halai — Automation &amp; AI Systems Engineer</title>
+  <title>Rehan Halai</title>
   <meta name="description" content="Rehan Halai is a software engineer building business process automation and AI-powered systems. Workflow automation, backend architecture, and applied AI." />
 
   <!-- OG Tags -->
@@ -43,6 +43,7 @@
   }
   </script>
 
+  <script src="components.js"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -51,16 +52,9 @@
   <a href="#main-work" class="skip-link">Skip to main content</a>
 
   <!-- ============================================================
-       TOP BAR
+       TOP BAR (Injected via Web Component)
        ============================================================ -->
-  <header class="header" role="banner">
-    <h1 class="wordmark">Rehan Halai <span class="wordmark__secondary">/ Automation</span></h1>
-    <div class="status" aria-label="Availability status">
-      <span class="status-dot" aria-hidden="true"></span>
-      <span>Available for Projects</span>
-      <span class="status-time" id="local-time" aria-label="Local time in India"></span>
-    </div>
-  </header>
+  <site-header></site-header>
 
   <!-- ============================================================
        THREE-COLUMN LAYOUT
@@ -71,7 +65,7 @@
       <!-- --------------------------------------------------------
            LEFT — PROFILE (CONTACT)
            -------------------------------------------------------- -->
-      <aside class="col col--profile" aria-label="Profile and contact information">
+      <aside class="col col--profile" id="about" aria-label="Profile and contact information">
         <p class="section-label">Profile (Contact)</p>
 
         <p class="bio">I'm Rehan Halai, a software engineer based in Junagadh, India. I build AI-powered systems that automate repetitive business processes and help teams spend less time on manual work.</p>
@@ -244,7 +238,7 @@
     <!-- ============================================================
          FOOTER (EDITORIAL BANNER)
          ============================================================ -->
-    <footer class="footer fade-entry">
+    <footer class="footer fade-entry" id="contact">
       <div class="footer__banner">
         <div class="footer__marquee-container" aria-hidden="true">
           <div class="footer__marquee-track">
