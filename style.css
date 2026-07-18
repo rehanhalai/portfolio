@@ -265,7 +265,6 @@ site-header, site-footer {
 
 .hero-content {
   text-align: left;
-  padding-top: var(--space-8);
 }
 
 .hero-title {
@@ -275,6 +274,51 @@ site-header, site-footer {
   letter-spacing: -0.04em;
   line-height: 1;
   color: var(--ink);
+}
+
+.hero-art-container {
+  margin-top: var(--space-6);
+  max-width: 620px;
+}
+
+.hero-art-svg {
+  width: 100%;
+  height: auto;
+  color: var(--ink-tertiary);
+  opacity: 0.8;
+  display: block;
+}
+
+.hero-art-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--space-2);
+}
+
+.hero-art-label {
+  font-size: 0.6875rem;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  color: var(--ink-tertiary);
+  letter-spacing: 0.05em;
+}
+
+.hero-art-svg path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawLine 3.5s cubic-bezier(0.2, 1, 0.2, 1) forwards;
+}
+
+.hero-art-svg path:nth-child(1) { animation-delay: 0.1s; }
+.hero-art-svg path:nth-child(2) { animation-delay: 0.3s; }
+.hero-art-svg path:nth-child(3) { animation-delay: 0.5s; }
+.hero-art-svg path:nth-child(4) { animation-delay: 0.2s; }
+.hero-art-svg path:nth-child(5) { animation-delay: 0.4s; }
+
+@keyframes drawLine {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 /* --- RIGHT COLUMN (ARCHIVE) --- */
