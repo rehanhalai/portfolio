@@ -606,6 +606,7 @@ a:hover {
 }
 
 .footer__cta {
+  position: relative;
   font-family: "Times New Roman", Times, serif;
   font-size: 4.5rem;
   font-weight: 400;
@@ -624,6 +625,20 @@ a:hover {
 .footer__cta:hover {
   background-color: var(--accent);
   color: var(--ink);
+}
+
+.cta-icon {
+  position: absolute;
+  bottom: -13px;
+  right: -40px;
+  width: 0.7em;
+  height: 0.7em;
+  color: var(--ink);
+  transition: transform 150ms ease;
+}
+
+.footer__cta:hover .cta-icon {
+  transform: scale(1.1) rotate(5deg);
 }
 
 .footer__bottom {
