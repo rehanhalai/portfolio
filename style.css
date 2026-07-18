@@ -263,6 +263,20 @@ site-header, site-footer {
   padding-right: var(--space-8);
 }
 
+.hero-content {
+  text-align: left;
+  padding-top: var(--space-8);
+}
+
+.hero-title {
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 6.5rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: var(--ink);
+}
+
 /* --- RIGHT COLUMN (ARCHIVE) --- */
 .col--archive {
   padding-left: var(--space-8);
@@ -548,12 +562,13 @@ site-header, site-footer {
   }
 
   .col--profile {
+    order: 3;
     border-right: none;
-    border-bottom: 1px solid var(--border);
     padding-right: var(--space-4);
   }
 
   .col--work {
+    order: 1;
     border-right: none;
     border-bottom: 1px solid var(--border);
     padding-left: var(--space-4);
@@ -561,12 +576,19 @@ site-header, site-footer {
   }
 
   .col--archive {
+    order: 2;
+    border-bottom: 1px solid var(--border);
     padding-left: var(--space-4);
+    padding-bottom: var(--space-6);
   }
 
   .portrait-placeholder {
     max-width: 200px;
     max-height: 240px;
+  }
+
+  .hero-title {
+    font-size: clamp(3.2rem, 12vw, 4rem);
   }
 }
 
@@ -582,6 +604,10 @@ site-header, site-footer {
 
   .site-container {
     padding: 0 var(--space-6);
+  }
+
+  .hero-title {
+    font-size: clamp(2.8rem, 4.5vw, 4.5rem);
   }
 }
 
