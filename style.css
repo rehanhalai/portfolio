@@ -435,6 +435,13 @@ site-header, site-footer {
   margin: var(--space-8) 0;
 }
 
+.section-divider {
+  border: none;
+  border-top: 2px solid var(--border);
+  margin: 0;
+  width: 100%;
+}
+
 .inline-label {
   font-size: 0.75rem;
   font-weight: 500;
