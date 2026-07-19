@@ -53,4 +53,16 @@
       el.classList.add('is-visible');
     });
   }
+
+  /* --- 3. LENIS SMOOTH SCROLL --- */
+  if (typeof Lenis !== 'undefined' && !motionQuery.matches) {
+    const lenis = new Lenis();
+    
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    
+    requestAnimationFrame(raf);
+  }
 })();

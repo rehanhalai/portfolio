@@ -29,26 +29,26 @@ class SiteFooter extends HTMLElement {
             <div class="footer__marquee-track">
               <!-- First Set -->
               <span class="marquee-text">Let's create something together</span>
-              <a href="mailto:hello@rehanhalai.com" class="footer__cta" tabindex="-1">
+              <a href="mailto:halairehan01@gmail.com" class="footer__cta" tabindex="-1">
                 EMAIL ME <img src="icons/click.svg" class="cta-icon" alt="" aria-hidden="true" />
               </a>
               <span class="marquee-text">Let's create something together</span>
-              <a href="mailto:hello@rehanhalai.com" class="footer__cta" tabindex="-1">
+              <a href="mailto:halairehan01@gmail.com" class="footer__cta" tabindex="-1">
                 EMAIL ME <img src="icons/click.svg" class="cta-icon" alt="" aria-hidden="true" />
               </a>
               <!-- Second Set (Duplicate for seamless loop) -->
               <span class="marquee-text">Let's create something together</span>
-              <a href="mailto:hello@rehanhalai.com" class="footer__cta" tabindex="-1">
+              <a href="mailto:halairehan01@gmail.com" class="footer__cta" tabindex="-1">
                 EMAIL ME <img src="icons/click.svg" class="cta-icon" alt="" aria-hidden="true" />
               </a>
               <span class="marquee-text">Let's create something together</span>
-              <a href="mailto:hello@rehanhalai.com" class="footer__cta" tabindex="-1">
+              <a href="mailto:halairehan01@gmail.com" class="footer__cta" tabindex="-1">
                 EMAIL ME <img src="icons/click.svg" class="cta-icon" alt="" aria-hidden="true" />
               </a>
             </div>
           </div>
           <!-- Screen reader text and actual focusable link -->
-          <a href="mailto:hello@rehanhalai.com" class="sr-only">Let's create something together. Email me.</a>
+          <a href="mailto:halairehan01@gmail.com" class="sr-only">Let's create something together. Email me.</a>
         </div>
 
         <div class="footer__bottom">
