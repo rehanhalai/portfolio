@@ -43,7 +43,27 @@
 html {
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
-  scroll-behavior: smooth;
+}
+
+/* Lenis Smooth Scrolling */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -142,6 +162,10 @@ a:hover {
 }
 
 /* --- HEADER / TOP BAR --- */
+site-header, site-footer {
+  display: contents;
+}
+
 .header {
   position: sticky;
   top: 0;
@@ -164,6 +188,20 @@ a:hover {
   text-transform: uppercase;
   color: var(--ink);
   white-space: nowrap;
+}
+
+.header__nav {
+  display: flex;
+  gap: var(--space-6);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.header__nav a {
+  color: var(--ink);
+  text-decoration: none;
 }
 
 .status {
@@ -245,6 +283,86 @@ a:hover {
   padding-right: var(--space-8);
 }
 
+.hero-content {
+  text-align: left;
+}
+
+.hero-title {
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 6.5rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.hero-art-container {
+  margin-top: var(--space-6);
+  max-width: 620px;
+}
+
+.hero-art-svg {
+  width: 100%;
+  height: auto;
+  color: var(--ink-tertiary);
+  opacity: 0.8;
+  display: block;
+}
+
+.hero-art-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--space-2);
+}
+
+.hero-art-label {
+  font-size: 0.6875rem;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  color: var(--ink-tertiary);
+  letter-spacing: 0.05em;
+}
+
+.hero-description {
+  margin-top: var(--space-8);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--ink-secondary);
+  max-width: 500px;
+}
+
+.hero-description p {
+  margin-bottom: var(--space-4);
+}
+
+.hero-cta {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  color: var(--ink);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.hero-art-svg path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawLine 3.5s cubic-bezier(0.2, 1, 0.2, 1) forwards;
+}
+
+.hero-art-svg path:nth-child(1) { animation-delay: 0.1s; }
+.hero-art-svg path:nth-child(2) { animation-delay: 0.3s; }
+.hero-art-svg path:nth-child(3) { animation-delay: 0.5s; }
+.hero-art-svg path:nth-child(4) { animation-delay: 0.2s; }
+.hero-art-svg path:nth-child(5) { animation-delay: 0.4s; }
+
+@keyframes drawLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 /* --- RIGHT COLUMN (ARCHIVE) --- */
 .col--archive {
   padding-left: var(--space-8);
@@ -313,8 +431,15 @@ a:hover {
 
 .divider {
   border: none;
-  border-top: 1px solid var(--border);
+  border-top: 2px solid var(--border);
   margin: var(--space-8) 0;
+}
+
+.section-divider {
+  border: none;
+  border-top: 2px solid var(--border);
+  margin: 0;
+  width: 100%;
 }
 
 .inline-label {
@@ -334,10 +459,10 @@ a:hover {
 
 .approach-flow {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
   justify-content: center;
-  gap: var(--space-3);
-  flex-wrap: wrap;
+  gap: var(--space-2);
 }
 
 .approach-step {
@@ -366,6 +491,7 @@ a:hover {
   font-size: 0.875rem;
   color: var(--ink-tertiary);
   flex-shrink: 0;
+  text-align: center;
 }
 
 /* --- ARCHIVE CONTENT --- */
@@ -481,6 +607,72 @@ a:hover {
   }
 }
 
+/* --- NEWSPAPER CLIPPING --- */
+.newspaper-clipping {
+  margin-bottom: var(--space-8);
+}
+
+.newspaper-meta {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-tertiary);
+  margin-bottom: var(--space-2);
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: var(--space-2);
+}
+
+.newspaper-author-img {
+  display: block;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin: var(--space-4) auto;
+  object-fit: cover;
+  filter: grayscale(100%) contrast(1.1) sepia(15%);
+  border: 1px solid var(--border);
+  padding: 3px;
+}
+
+.newspaper-headline {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.1;
+  margin-bottom: var(--space-3);
+  color: var(--ink);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.newspaper-text {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+  color: var(--ink);
+  margin-bottom: var(--space-2);
+}
+
+.newspaper-text:last-child {
+  margin-bottom: 0;
+}
+
+.drop-cap {
+  float: left;
+  font-size: 4rem;
+  line-height: 0.8;
+  padding-top: 5px;
+  padding-right: 6px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: bold;
+  color: var(--ink);
+}
+
+
 /* ============================================================
    RESPONSIVE — MOBILE (≤768px)
    ============================================================ */
@@ -499,12 +691,17 @@ a:hover {
     display: none;
   }
 
-  .status {
-    font-size: 0.6875rem;
+  .wordmark__secondary {
+    display: none;
   }
 
-  .status-time {
+  .status {
     display: none;
+  }
+
+  .header__nav {
+    gap: var(--space-4);
+    font-size: 0.75rem;
   }
 
   .site-container {
@@ -525,12 +722,13 @@ a:hover {
   }
 
   .col--profile {
+    order: 3;
     border-right: none;
-    border-bottom: 1px solid var(--border);
     padding-right: var(--space-4);
   }
 
   .col--work {
+    order: 1;
     border-right: none;
     border-bottom: 1px solid var(--border);
     padding-left: var(--space-4);
@@ -538,12 +736,19 @@ a:hover {
   }
 
   .col--archive {
+    order: 2;
+    border-bottom: 1px solid var(--border);
     padding-left: var(--space-4);
+    padding-bottom: var(--space-6);
   }
 
   .portrait-placeholder {
     max-width: 200px;
     max-height: 240px;
+  }
+
+  .hero-title {
+    font-size: clamp(3.2rem, 12vw, 4rem);
   }
 }
 
@@ -559,6 +764,10 @@ a:hover {
 
   .site-container {
     padding: 0 var(--space-6);
+  }
+
+  .hero-title {
+    font-size: clamp(2.8rem, 4.5vw, 4.5rem);
   }
 }
 

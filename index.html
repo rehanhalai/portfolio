@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Rehan Halai — Automation &amp; AI Systems Engineer</title>
+  <title>Rehan Halai</title>
   <meta name="description" content="Rehan Halai is a software engineer building business process automation and AI-powered systems. Workflow automation, backend architecture, and applied AI." />
 
   <!-- OG Tags -->
@@ -43,6 +43,7 @@
   }
   </script>
 
+  <script src="components.js"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -51,16 +52,9 @@
   <a href="#main-work" class="skip-link">Skip to main content</a>
 
   <!-- ============================================================
-       TOP BAR
+       TOP BAR (Injected via Web Component)
        ============================================================ -->
-  <header class="header" role="banner">
-    <h1 class="wordmark">Rehan Halai <span class="wordmark__secondary">/ Automation</span></h1>
-    <div class="status" aria-label="Availability status">
-      <span class="status-dot" aria-hidden="true"></span>
-      <span>Available for Projects</span>
-      <span class="status-time" id="local-time" aria-label="Local time in India"></span>
-    </div>
-  </header>
+  <site-header></site-header>
 
   <!-- ============================================================
        THREE-COLUMN LAYOUT
@@ -71,140 +65,114 @@
       <!-- --------------------------------------------------------
            LEFT — PROFILE (CONTACT)
            -------------------------------------------------------- -->
-      <aside class="col col--profile" aria-label="Profile and contact information">
-        <p class="section-label">Profile (Contact)</p>
+      <aside class="col col--profile" id="about" aria-label="Profile and contact information">
+        <div class="fade-entry">
+          <!-- The Newspaper Op-Ed -->
+          <div class="newspaper-clipping">
+            <p class="newspaper-meta">OP-ED • The Automation Era</p>
+            <img src="images/thinking.webp" alt="Author portrait" class="newspaper-author-img" width="180" height="180" loading="lazy" />
+            <h3 class="newspaper-headline">The Human Duct Tape</h3>
+            <p class="newspaper-text"><span class="drop-cap">M</span>ost operational problems are process problems wearing a people costume. When highly skilled employees are forced to copy-paste data, manage endless spreadsheets, or trigger emails manually, they act as human duct tape holding broken systems together.</p>
+            <p class="newspaper-text">This hidden tax of manual labor kills scalability. Automation isn't just about saving time; it's about removing the tape so your business can actually breathe.</p>
+          </div>
+          <div class="divider"></div>
 
-        <p class="bio">I'm Rehan Halai, a software engineer based in Junagadh, India. I build AI-powered systems that automate repetitive business processes and help teams spend less time on manual work.</p>
-        <p class="bio">Most operational problems are process problems wearing a people costume. I enjoy analyzing how work flows through a business and turning repetitive tasks into reliable software using AI, automation, APIs, and backend systems.</p>
-        <p class="bio">I'm currently a Software Engineer at Sidequests while building Scalic, where I'm focused on helping businesses design smarter operational workflows..</p>
-
-        <ul class="contact-list">
-          <li>
-            <!-- TODO: add actual email address -->
-            <a href="mailto:halairehan01@gmail.com" class="link-hover" id="contact-email">Email</a>
-          </li>
-          <li>
-            <!-- TODO: add actual LinkedIn URL -->
-            <a href="https://www.linkedin.com/in/rehanhalai/" target="_blank" class="link-hover" id="contact-linkedin">LinkedIn</a>
-          </li>
-          <li>
-            <!-- TODO: add actual GitHub URL -->
-            <a href="https://github.com/rehanhalai" target="_blank" class="link-hover" id="contact-github">GitHub</a>
-          </li>
-        </ul>
+          <!-- Second Newspaper Op-Ed -->
+          <div class="newspaper-clipping">
+            <p class="newspaper-meta">OP-ED • The Cost of Inaction</p>
+            <img src="images/dog.webp" alt="Author portrait" class="newspaper-author-img" width="180" height="180" loading="lazy" />
+            <h3 class="newspaper-headline">69 Days Wasted</h3>
+            <p class="newspaper-text"><span class="drop-cap">T</span>he average employee spends 69 days a year on administrative tasks and manual data entry. What could your team achieve with 69 extra days? When you refuse to automate, you are not just wasting time; you are systematically draining your company's potential.</p>
+            <p class="newspaper-text" style="margin-top: var(--space-4);">And this is exactly why you should work with me — to save those 69 days :)</p>
+          </div>
+        </div>
       </aside>
 
       <!-- -------------------------------------------------------- 
            CENTER — WORK (SYSTEMS)
            -------------------------------------------------------- -->
-      <main class="col col--work" id="main-work" aria-label="Work and services">
-        <p class="section-label">Work (Systems)</p>
+      <main class="col col--work hero" id="main-work" aria-label="Hero section">
+        <div class="hero-content fade-entry">
+          <div class="section-label">Welcome to my workspace</div>
+          <h2 class="hero-title">Automate<br/>Smartly...</h2>
+          
+          <!-- Metaphorical Art: Chaos to Order -->
+          <div class="hero-art-container">
+            <svg class="hero-art-svg" viewBox="0 0 500 120" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M 0,20 C 50,150 80,-50 150,20 C 180,50 220,30 250,30 L 500,30" stroke-linecap="round" />
+              <path d="M 0,40 C 70,-40 130,140 170,40 C 200,-20 240,45 250,45 L 500,45" stroke-linecap="round" />
+              <path d="M 0,60 C 60,-30 100,160 160,60 C 190,10 230,60 250,60 L 500,60" stroke-linecap="round" />
+              <path d="M 0,80 C 30,170 90,-20 180,80 C 210,120 240,75 250,75 L 500,75" stroke-linecap="round" />
+              <path d="M 0,100 C 40,20 120,120 140,80 C 170,20 210,90 250,90 L 500,90" stroke-linecap="round" />
+            </svg>
+            <div class="hero-art-labels">
+              <span class="hero-art-label">← Manual / Chaotic</span>
+              <span class="hero-art-label">Automated / Seamless →</span>
+            </div>
+          </div>
 
-        <!-- Services -->
-        <article class="work-entry fade-entry">
-          <p class="work-entry__number">01</p>
-          <h2 class="work-entry__title">Business Process Analysis</h2>
-          <p class="work-entry__desc">I map how your business actually runs today&nbsp;— the manual steps, handoffs, and workarounds&nbsp;— before writing a single line of automation. You get a clear picture of where time is leaking.</p>
-        </article>
-
-        <article class="work-entry fade-entry">
-          <p class="work-entry__number">02</p>
-          <h2 class="work-entry__title">Workflow Automation</h2>
-          <p class="work-entry__desc">I connect your existing tools and rebuild repetitive processes as automated workflows&nbsp;— onboarding, CRM updates, reporting, follow-ups&nbsp;— so they run without anyone touching them.</p>
-        </article>
-
-        <article class="work-entry fade-entry">
-          <p class="work-entry__number">03</p>
-          <h2 class="work-entry__title">AI Systems</h2>
-          <p class="work-entry__desc">I build AI-powered assistants on top of your existing tools and data, for internal ops or client-facing work, using models like GPT and Claude.</p>
-        </article>
-
-        <hr class="divider" />
-
-        <!-- Problems I Solve -->
+        </div>
+        
+        <br/><br/>
+        
         <div class="fade-entry">
-          <p class="inline-label">Problems I Solve</p>
-          <p class="problems-list">Manual client onboarding · Repetitive data entry · Internal documentation · CRM updates · Reporting · Follow-ups · Lead management · Email workflows · AI assistants</p>
+          <p class="section-label">Work (Systems)</p>
+
+          <!-- Services -->
+          <article class="work-entry">
+            <p class="work-entry__number">01</p>
+            <h2 class="work-entry__title">Business Process Analysis</h2>
+            <p class="work-entry__desc">I map how your business actually runs today&nbsp;— the manual steps, handoffs, and workarounds&nbsp;— before writing a single line of automation. You get a clear picture of where time is leaking.</p>
+          </article>
+
+          <article class="work-entry">
+            <p class="work-entry__number">02</p>
+            <h2 class="work-entry__title">Workflow Automation</h2>
+            <p class="work-entry__desc">I connect your existing tools and rebuild repetitive processes as automated workflows&nbsp;— onboarding, CRM updates, reporting, follow-ups&nbsp;— so they run without anyone touching them.</p>
+          </article>
+
+          <article class="work-entry">
+            <p class="work-entry__number">03</p>
+            <h2 class="work-entry__title">AI Systems</h2>
+            <p class="work-entry__desc">I build AI-powered assistants on top of your existing tools and data, for internal ops or client-facing work, using models like GPT and Claude.</p>
+          </article>
+
+          <article class="work-entry">
+            <p class="work-entry__number">04</p>
+            <h2 class="work-entry__title">Custom Web & Internal Tools</h2>
+            <p class="work-entry__desc">I design and develop bespoke websites and internal dashboards tailored exactly to your operational needs. Blazing fast, zero bloat, and highly scalable architecture.</p>
+          </article>
         </div>
 
-        <hr class="divider" />
-
-        <!-- Approach -->
-        <div class="fade-entry">
-          <p class="inline-label">Approach</p>
-        </div>
-
-        <div class="approach-flow fade-entry">
-          <div class="approach-step">
-            <span class="approach-step__num">01</span>
-            <span class="approach-step__label">Discover</span>
-          </div>
-          <span class="approach-arrow" aria-hidden="true">→</span>
-          <div class="approach-step">
-            <span class="approach-step__num">02</span>
-            <span class="approach-step__label">Analyze</span>
-          </div>
-          <span class="approach-arrow" aria-hidden="true">→</span>
-          <div class="approach-step">
-            <span class="approach-step__num">03</span>
-            <span class="approach-step__label">Automate</span>
-          </div>
-          <span class="approach-arrow" aria-hidden="true">→</span>
-          <div class="approach-step">
-            <span class="approach-step__num">04</span>
-            <span class="approach-step__label">Improve</span>
-          </div>
-        </div>
       </main>
 
       <!-- --------------------------------------------------------
            RIGHT — ARCHIVE (CV)
            -------------------------------------------------------- -->
       <aside class="col col--archive" aria-label="Archive and CV">
-        <p class="section-label">Archive (CV)</p>
+        <div class="fade-entry">
+          <p class="section-label">Profile</p>
 
-        <!-- Portrait -->
-        <img
-          src="images/portrait.jpeg"
-          alt="Portrait of Rehan Halai"
-          class="portrait"
-          width="280"
-          height="373"
-          loading="lazy"
-        />
+          <!-- Portrait -->
+          <img
+            src="images/portrait.webp"
+            alt="Portrait of Rehan Halai"
+            class="portrait"
+            width="435"
+            height="434"
+            loading="lazy"
+          />
 
-        <!-- Currently -->
-        <div class="archive-section">
-          <p class="archive-section__label">Currently</p>
-          <div class="archive-section__content">
-            <p>Software Engineer</p>
-            <p>Building AI Automation Systems</p>
-            <p>Freelancer</p>
+          <div>
+            <p class="newspaper-text"><span class="drop-cap">Hi</span> I'm Rehan Halai. I'm a Business Process Analyst and Software Engineer.</p>
+            <p class="newspaper-text">I help businesses work more efficiently by hunting down operational bottlenecks and refining repetitive tasks into seamless automated workflows.</p>
+            <p class="newspaper-text">Let's look at the roadmap gradually but before that you should read the left panel..</p>
           </div>
-        </div>
-
-        <!-- Education -->
-        <div class="archive-section">
-          <p class="archive-section__label">Education</p>
-          <div class="archive-section__content">
-            <p>BCA, Dr. Subhash University, Junagadh</p>
-            <p class="meta">Batch 2027</p>
-          </div>
-        </div>
-
-        <!-- Built -->
-        <div class="archive-section">
-          <p class="archive-section__label">Built</p>
-          <div class="archive-section__content">
-            <p>Recto — recto.social <span class="meta">(solo developer, shipped)</span></p>
-            <p>Sidequests — Social Platform</p>
-          </div>
-        </div>
-
-        <!-- Stack -->
-        <div class="archive-section">
-          <p class="archive-section__label">Stack</p>
-          <div class="stack-grid">
+         
+          <!-- Stack -->
+          <div class="archive-section">
+            <p class="archive-section__label">Stack</p>
+            <div class="stack-grid">
             <div class="stack-item stack-item--lg">
               <img class="stack-icon" src="icons/n8n.svg" alt="n8n" />
             </div>
@@ -235,56 +203,53 @@
             <div class="stack-item">
               <img class="stack-icon" src="icons/github.svg" alt="GitHub" />
             </div>
+            <div class="stack-item stack-item--tall">
+              <img class="stack-icon" src="icons/laravel.svg" alt="Laravel" />
+            </div>
+            <div class="stack-item">
+              <img class="stack-icon" src="icons/drizzle.svg" alt="Drizzle" style="transform: scale(1.5);" />
+            </div>
+            <div class="stack-item">
+              <img class="stack-icon" src="icons/expressjs.svg" alt="Express.js" style="transform: scale(2.2);" />
+            </div>
+            <div class="stack-item stack-item--tall">
+              <img class="stack-icon" src="icons/linux.svg" alt="Linux" />
+            </div>
+            <div class="stack-item stack-item--lg">
+              <img class="stack-icon" src="icons/openai.svg" alt="OpenAI" />
+            </div>
+            <div class="stack-item">
+              <img class="stack-icon" src="icons/nestjs.svg" alt="NestJS" />
+            </div>
+            <div class="stack-item">
+              <img class="stack-icon" src="icons/prisma.svg" alt="Prisma" />
+            </div>
           </div>
+        </div>
         </div>
       </aside>
 
     </div><!-- .columns -->
+  </div><!-- end .site-container -->
+
+  <!-- ============================================================
+       EXTRA CONTENT SECTION
+       ============================================================ -->
+  <hr class="section-divider" />
+  
+  <div class="site-container">
+    <section id="extra" class="fade-entry" style="min-height: 200px; padding: var(--space-8) 0;">
+      <!-- Ready for your new content! -->
+    </section>
 
     <!-- ============================================================
          FOOTER (EDITORIAL BANNER)
          ============================================================ -->
-    <footer class="footer fade-entry">
-      <div class="footer__banner">
-        <div class="footer__marquee-container" aria-hidden="true">
-          <div class="footer__marquee-track">
-            <!-- First Set -->
-            <span class="marquee-text">Let's create something together</span>
-            <a href="mailto:hello@rehanhalai.com" class="footer__cta" tabindex="-1">
-              EMAIL ME <img src="icons/click.svg" class="cta-icon" alt="" aria-hidden="true" />
-            </a>
-            <span class="marquee-text">Let's create something together</span>
-            <a href="mailto:hello@rehanhalai.com" class="footer__cta" tabindex="-1">
-              EMAIL ME <img src="icons/click.svg" class="cta-icon" alt="" aria-hidden="true" />
-            </a>
-            <!-- Second Set (Duplicate for seamless loop) -->
-            <span class="marquee-text">Let's create something together</span>
-            <a href="mailto:hello@rehanhalai.com" class="footer__cta" tabindex="-1">
-              EMAIL ME <img src="icons/click.svg" class="cta-icon" alt="" aria-hidden="true" />
-            </a>
-            <span class="marquee-text">Let's create something together</span>
-            <a href="mailto:hello@rehanhalai.com" class="footer__cta" tabindex="-1">
-              EMAIL ME <img src="icons/click.svg" class="cta-icon" alt="" aria-hidden="true" />
-            </a>
-          </div>
-        </div>
-        <!-- Screen reader text and actual focusable link -->
-        <a href="mailto:hello@rehanhalai.com" class="sr-only">Let's create something together. Email me.</a>
-      </div>
-
-      <div class="footer__bottom">
-        <div class="footer__legal">
-          <span class="footer__logo">REHAN HALAI &copy;</span>
-        </div>
-        <div class="footer__links">
-          <a href="https://linkedin.com" target="_blank" class="link-hover">LINKEDIN</a> &bull;
-          <a href="https://github.com/rehanhalai" target="_blank" class="link-hover">GITHUB</a>
-        </div>
-      </div>
-    </footer>
+    <site-footer></site-footer>
 
   </div><!-- .site-container -->
 
-  <script src="script.js"></script>
+  <script defer src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+  <script defer src="script.js"></script>
 </body>
 </html>
