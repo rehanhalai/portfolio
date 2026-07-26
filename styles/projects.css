@@ -1,0 +1,389 @@
+/* ============================================================
+   REHAN HALAI — AUTHENTIC BROADSHEET CLASSIFIEDS STYLESHEET
+   Disciplined editorial print craftsmanship for projects
+   ============================================================ */
+
+/* --- HERO BANNER (BROADSHEET HEADER) --- */
+.projects-hero {
+  padding: var(--space-6) 0 var(--space-4);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: var(--space-6);
+  text-align: center;
+}
+
+.projects-hero__subtitle {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--ink-secondary);
+  margin-bottom: var(--space-2);
+  display: inline-block;
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 2px;
+  font-weight: 600;
+}
+
+.projects-hero__title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.1;
+  margin: var(--space-2) 0 var(--space-3);
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.projects-hero__desc {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--ink);
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* --- CATEGORY FILTERS (PRESS TABS) --- */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--border);
+}
+
+.filter-btn {
+  background: var(--bg);
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  padding: var(--space-1) var(--space-3);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: all 150ms ease;
+  border-radius: 0px;
+}
+
+.filter-btn:hover {
+  background-color: var(--ink);
+  color: var(--bg);
+}
+
+.filter-btn.active {
+  background-color: var(--ink);
+  color: var(--bg);
+  font-weight: 700;
+}
+
+/* --- SEAMLESS BROADSHEET NEWSPAPER PAGE (NO BOX CARDS) --- */
+.broadsheet-page {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr;
+  gap: 0;
+  padding: var(--space-4) 0;
+  margin-bottom: var(--space-8);
+}
+
+.broadsheet-col {
+  padding: 0 var(--space-6);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+}
+
+.broadsheet-col:first-child {
+  padding-left: 0;
+}
+
+.broadsheet-col:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.broadsheet-story {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding-bottom: var(--space-6);
+  margin-bottom: var(--space-6);
+  border-bottom: 1px solid var(--border);
+}
+
+.broadsheet-story:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.broadsheet-story--lead {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.broadsheet-story__meta {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink-secondary);
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.broadsheet-story__title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.25;
+  margin: var(--space-2) 0 var(--space-1);
+}
+
+.broadsheet-story--lead .broadsheet-story__title {
+  font-size: 1.6rem;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.broadsheet-story__byline {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--ink-tertiary);
+  margin-bottom: var(--space-2);
+  font-style: italic;
+}
+
+.broadsheet-story__desc {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--ink);
+  margin-bottom: var(--space-2);
+}
+
+/* --- NEWSPAPER CLIPPING CARD (COMPACT PRINT BORDERS) --- */
+.project-card {
+  background: var(--bg);
+  border-top: 1px solid #3e3b37;
+  border-left: 1px solid #3e3b37;
+  border-right: 1px solid #6b6459;
+  border-bottom: 1px solid #6b6459;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.25);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+/* Subtle micro-rotations for imperfect print feel */
+.project-card:nth-child(even) {
+  transform: rotate(0.12deg);
+}
+
+.project-card:nth-child(odd) {
+  transform: rotate(-0.12deg);
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.35);
+}
+
+/* PRESS RULE DIVIDER */
+.project-card__rule {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: var(--space-2) 0;
+}
+
+.project-card__meta {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-secondary);
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-card__issue {
+  font-weight: 700;
+  color: var(--accent);
+  font-family: Georgia, serif;
+}
+
+.project-card__title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.25;
+  margin: var(--space-2) 0 var(--space-1);
+}
+
+.project-card__byline {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--ink-tertiary);
+  margin-bottom: var(--space-2);
+  font-style: italic;
+}
+
+.project-card__desc {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--ink);
+  margin-bottom: var(--space-2);
+}
+
+/* COMPACT EDITOR'S NOTE (NEWSPAPER BOX) */
+.project-card__editor-note {
+  border: 1px solid var(--ink);
+  padding: var(--space-2) var(--space-3);
+  margin: var(--space-2) 0;
+  text-align: center;
+  background: var(--bg-panel);
+}
+
+.editor-note__label {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 2px;
+}
+
+.editor-note__text {
+  font-family: Georgia, serif;
+  font-size: 0.75rem;
+  font-style: italic;
+  color: var(--ink);
+  line-height: 1.35;
+}
+
+/* EDITORIAL TECH SPEC */
+.project-card__tech {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.03em;
+  color: var(--ink-secondary);
+  margin: var(--space-1) 0;
+}
+
+.tech-label {
+  font-weight: 700;
+  color: var(--ink);
+  text-transform: uppercase;
+  margin-right: 4px;
+}
+
+.tech-list {
+  color: var(--ink-secondary);
+}
+
+/* CARD ACTIONS */
+.project-card__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.project-link {
+  color: var(--ink);
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.project-link:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.project-link--secondary {
+  color: var(--ink-tertiary);
+  font-weight: 500;
+}
+
+.project-link--secondary:hover {
+  color: var(--ink);
+}
+
+/* Hide filtered items */
+.project-card.is-hidden {
+  display: none;
+}
+
+/* --- MEDIA QUERIES & RESPONSIVE BROADSHEET scaling --- */
+@media (max-width: 1024px) {
+  .broadsheet-page {
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--space-4);
+  }
+  .broadsheet-col:nth-child(3) {
+    grid-column: span 2;
+    border-right: none;
+    border-top: 1px solid var(--border);
+    padding-top: var(--space-4);
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .broadsheet-page {
+    grid-template-columns: 1fr;
+    border-top: 2px solid var(--ink);
+    border-bottom: 2px solid var(--ink);
+    padding: var(--space-4) 0;
+    gap: 0;
+  }
+
+  .broadsheet-col {
+    padding: 0 0 var(--space-4) 0;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: var(--space-4);
+  }
+
+  .broadsheet-col:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .broadsheet-story--lead .broadsheet-story__title {
+    font-size: 1.3rem;
+  }
+
+  .broadsheet-story__title {
+    font-size: 1.05rem;
+  }
+
+  /* Show only top 3 projects on small mobile screens */
+  .hide-on-mobile {
+    display: none !important;
+  }
+}

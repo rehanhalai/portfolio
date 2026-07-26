@@ -44,7 +44,9 @@
   </script>
 
   <script src="components.js"></script>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/projects.css" />
+  <link rel="stylesheet" href="styles/case-studies.css" />
 </head>
 <body>
 
@@ -70,7 +72,7 @@
           <!-- The Newspaper Op-Ed -->
           <div class="newspaper-clipping">
             <p class="newspaper-meta">OP-ED • The Automation Era</p>
-            <img src="images/thinking.webp" alt="Author portrait" class="newspaper-author-img" width="180" height="180" loading="lazy" />
+            <img src="assets/images/thinking.webp" alt="Author portrait" class="newspaper-author-img" width="180" height="180" loading="lazy" />
             <h3 class="newspaper-headline">The Human Duct Tape</h3>
             <p class="newspaper-text"><span class="drop-cap">M</span>ost operational problems are process problems wearing a people costume. When highly skilled employees are forced to copy-paste data, manage endless spreadsheets, or trigger emails manually, they act as human duct tape holding broken systems together.</p>
             <p class="newspaper-text">This hidden tax of manual labor kills scalability. Automation isn't just about saving time; it's about removing the tape so your business can actually breathe.</p>
@@ -80,7 +82,7 @@
           <!-- Second Newspaper Op-Ed -->
           <div class="newspaper-clipping">
             <p class="newspaper-meta">OP-ED • The Cost of Inaction</p>
-            <img src="images/dog.webp" alt="Author portrait" class="newspaper-author-img" width="180" height="180" loading="lazy" />
+            <img src="assets/images/dog.webp" alt="Author portrait" class="newspaper-author-img" width="180" height="180" loading="lazy" />
             <h3 class="newspaper-headline">69 Days Wasted</h3>
             <p class="newspaper-text"><span class="drop-cap">T</span>he average employee spends 69 days a year on administrative tasks and manual data entry. What could your team achieve with 69 extra days? When you refuse to automate, you are not just wasting time; you are systematically draining your company's potential.</p>
             <p class="newspaper-text" style="margin-top: var(--space-4);">And this is exactly why you should work with me — to save those 69 days :)</p>
@@ -151,22 +153,23 @@
            -------------------------------------------------------- -->
       <aside class="col col--archive" aria-label="Archive and CV">
         <div class="fade-entry">
-          <p class="section-label">Profile</p>
+          <div class="profile-block">
+            <p class="section-label">Profile</p>
 
-          <!-- Portrait -->
-          <img
-            src="images/portrait.webp"
-            alt="Portrait of Rehan Halai"
-            class="portrait"
-            width="435"
-            height="434"
-            loading="lazy"
-          />
+            <!-- Portrait -->
+            <img
+              src="assets/images/portrait.webp"
+              alt="Portrait of Rehan Halai"
+              class="portrait"
+              width="435"
+              height="434"
+              loading="lazy"
+            />
 
-          <div>
-            <p class="newspaper-text"><span class="drop-cap">Hi</span> I'm Rehan Halai. I'm a Business Process Analyst and Software Engineer.</p>
-            <p class="newspaper-text">I help businesses work more efficiently by hunting down operational bottlenecks and refining repetitive tasks into seamless automated workflows.</p>
-            <p class="newspaper-text">Let's look at the roadmap gradually but before that you should read the left panel..</p>
+            <div>
+              <p class="newspaper-text"><span class="drop-cap">Hi</span> I'm Rehan Halai. I'm a Business Process Analyst and Software Engineer.</p>
+              <p class="newspaper-text">I help businesses work more efficiently by hunting down operational bottlenecks and refining repetitive tasks into seamless automated workflows.</p>
+            </div>
           </div>
          
           <!-- Stack -->
@@ -174,55 +177,55 @@
             <p class="archive-section__label">Stack</p>
             <div class="stack-grid">
             <div class="stack-item stack-item--lg">
-              <img class="stack-icon" src="icons/n8n.svg" alt="n8n" />
+              <img class="stack-icon" src="assets/icons/n8n.svg" alt="n8n" />
             </div>
             <div class="stack-item stack-item--tall">
-              <img class="stack-icon" src="icons/react.svg" alt="React" />
+              <img class="stack-icon" src="assets/icons/react.svg" alt="React" />
             </div>
             <div class="stack-item stack-item--tall">
-              <img class="stack-icon" src="icons/nodejs.svg" alt="Node.js" />
+              <img class="stack-icon" src="assets/icons/nodejs.svg" alt="Node.js" />
             </div>
             <div class="stack-item">
-              <img class="stack-icon" src="icons/typescript.svg" alt="TypeScript" />
+              <img class="stack-icon" src="assets/icons/typescript.svg" alt="TypeScript" />
             </div>
             <div class="stack-item stack-item--wide">
-              <img class="stack-icon" src="icons/nextjs.svg" alt="Next.js" />
+              <img class="stack-icon" src="assets/icons/nextjs.svg" alt="Next.js" />
             </div>
             <div class="stack-item">
-              <img class="stack-icon" src="icons/docker.svg" alt="Docker" />
+              <img class="stack-icon" src="assets/icons/docker.svg" alt="Docker" />
             </div>
             <div class="stack-item stack-item--tall">
-              <img class="stack-icon" src="icons/postgres.svg" alt="PostgreSQL" />
+              <img class="stack-icon" src="assets/icons/postgres.svg" alt="PostgreSQL" />
             </div>
             <div class="stack-item">
-              <img class="stack-icon" src="icons/trpc.svg" alt="tRPC" />
+              <img class="stack-icon" src="assets/icons/trpc.svg" alt="tRPC" />
             </div>
             <div class="stack-item stack-item--lg">
-              <img class="stack-icon" src="icons/claude.svg" alt="Claude" style="transform: scale(1.15);" />
+              <img class="stack-icon" src="assets/icons/claude.svg" alt="Claude" style="transform: scale(1.15);" />
             </div>
             <div class="stack-item">
-              <img class="stack-icon" src="icons/github.svg" alt="GitHub" />
+              <img class="stack-icon" src="assets/icons/github.svg" alt="GitHub" />
             </div>
             <div class="stack-item stack-item--tall">
-              <img class="stack-icon" src="icons/laravel.svg" alt="Laravel" />
+              <img class="stack-icon" src="assets/icons/laravel.svg" alt="Laravel" />
             </div>
             <div class="stack-item">
-              <img class="stack-icon" src="icons/drizzle.svg" alt="Drizzle" style="transform: scale(1.5);" />
+              <img class="stack-icon" src="assets/icons/drizzle.svg" alt="Drizzle" style="transform: scale(1.5);" />
             </div>
             <div class="stack-item">
-              <img class="stack-icon" src="icons/expressjs.svg" alt="Express.js" style="transform: scale(2.2);" />
+              <img class="stack-icon" src="assets/icons/expressjs.svg" alt="Express.js" style="transform: scale(2.2);" />
             </div>
             <div class="stack-item stack-item--tall">
-              <img class="stack-icon" src="icons/linux.svg" alt="Linux" />
+              <img class="stack-icon" src="assets/icons/linux.svg" alt="Linux" />
             </div>
             <div class="stack-item stack-item--lg">
-              <img class="stack-icon" src="icons/openai.svg" alt="OpenAI" />
+              <img class="stack-icon" src="assets/icons/openai.svg" alt="OpenAI" />
             </div>
             <div class="stack-item">
-              <img class="stack-icon" src="icons/nestjs.svg" alt="NestJS" />
+              <img class="stack-icon" src="assets/icons/nestjs.svg" alt="NestJS" />
             </div>
             <div class="stack-item">
-              <img class="stack-icon" src="icons/prisma.svg" alt="Prisma" />
+              <img class="stack-icon" src="assets/icons/prisma.svg" alt="Prisma" />
             </div>
           </div>
         </div>
@@ -238,8 +241,187 @@
   <hr class="section-divider" />
   
   <div class="site-container">
-    <section id="extra" class="fade-entry" style="min-height: 200px; padding: var(--space-8) 0;">
-      <!-- Ready for your new content! -->
+    <section id="extra" class="fade-entry" style="padding: var(--space-8) 0;">
+      
+      <!-- ============================================================
+           FEATURED PROJECTS PREVIEW (STATIC HTML)
+           ============================================================ -->
+        <div class="broadsheet-page" style="margin-top: var(--space-4);">
+          <!-- Column 1: Front Page Lead Dispatches -->
+          <div class="broadsheet-col">
+            <div class="broadsheet-lead-header" style="margin-bottom: var(--space-4); border-bottom: 1px solid var(--border); padding-bottom: var(--space-3);">
+              <h2 style="font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2.2rem, 3.5vw, 2.75rem); font-weight: 800; text-transform: uppercase; letter-spacing: -0.02em; color: var(--ink); margin: 0; line-height: 0.95;">FEATURED PROJECTS</h2>
+              <div style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--ink-tertiary); margin-top: 8px; text-transform: uppercase; letter-spacing: 0.08em; display: flex; justify-content: space-between; align-items: center;">
+                <span>SPECIAL DISPATCHES & AUTOMATION SCHEMATICS</span>
+                <a href="projects/" class="link-hover" style="font-weight: 700; color: var(--ink);">VIEW ALL (6) →</a>
+              </div>
+            </div>
+
+            <article class="broadsheet-story broadsheet-story--lead">
+              <div class="broadsheet-story__meta">
+                <span>FRONT PAGE FEATURE • WORKFLOW AUTOMATION</span>
+                <span class="project-card__issue">ISSUE 01</span>
+              </div>
+              <h3 class="broadsheet-story__title">Client Onboarding & AI Business Audit Automation</h3>
+              <div class="broadsheet-story__byline">By Rehan Halai · Published July 2026</div>
+              <p class="broadsheet-story__desc">A production-tested post-deposit onboarding & business intelligence pipeline. Ingests 9-field client intake forms via n8n, executes a cold background web audit using Google Gemini AI, automatically provisions multi-tier Google Drive workspace folders, converts markdown briefs into binary files, and dispatches custom welcome emails & instant Telegram alerts.</p>
+
+              <div class="project-card__editor-note" style="margin: var(--space-3) 0;">
+                <span class="editor-note__label">EDITOR'S NOTE</span>
+                <p class="editor-note__text">Automated 100% of post-deposit client setup, generating workspace folders and AI briefs instantly.</p>
+              </div>
+
+              <div class="project-card__tech">
+                <span class="tech-label">TECHNOLOGY</span>
+                <span class="tech-list">n8n · Google Gemini AI · Google Drive API · Gmail</span>
+              </div>
+
+              <div style="margin-top: var(--space-3);">
+                <a href="case-studies/#case-1" class="project-link">Read Full Special Report →</a>
+              </div>
+            </article>
+
+            <article class="broadsheet-story">
+              <div class="broadsheet-story__meta">
+                <span>INTERNAL TOOLS</span>
+                <span class="project-card__issue">ISSUE 03</span>
+              </div>
+              <h3 class="broadsheet-story__title">Operational Health & Task Dispatch Board</h3>
+              <div class="broadsheet-story__byline">By Rehan Halai · Published July 2026</div>
+              <p class="broadsheet-story__desc">Real-time operational dashboard tracking background queue workers, rate limits, and system alerts across server nodes.</p>
+
+              <div class="project-card__tech">
+                <span class="tech-label">TECHNOLOGY</span>
+                <span class="tech-list">React · Next.js · Express.js</span>
+              </div>
+
+              <div style="margin-top: var(--space-2);">
+                <a href="projects/" class="project-link">Inspect Source →</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Column 2: Applied AI & Knowledge Vault -->
+          <div class="broadsheet-col">
+            <article class="broadsheet-story">
+              <div class="broadsheet-story__meta">
+                <span>SECOND BRAIN • AI-AGNOSTIC ARCHITECTURE</span>
+                <span class="project-card__issue">ISSUE 02</span>
+              </div>
+              <h3 class="broadsheet-story__title">Obsidian-Powered Business Operating System</h3>
+              <div class="broadsheet-story__byline">By Rehan Halai · Published July 2026</div>
+              <p class="broadsheet-story__desc">An AI-agnostic Second Brain knowledge graph structured in Obsidian. Maps domain expertise, automates routine SOPs, and provides structured context vectors consumed seamlessly by Gemini, Claude, and custom local agents.</p>
+
+              <figure class="broadsheet-figure" style="margin: var(--space-3) 0;">
+                <img src="assets/images/obsidian-valut.webp" alt="Obsidian Knowledge Graph Vault" class="broadsheet-img" style="width: 100%; height: auto; border: 1px solid var(--ink); padding: 2px; background: var(--bg-panel); filter: contrast(105%) sepia(10%); display: block;" />
+                <figcaption style="font-family: var(--font-mono); font-size: 0.625rem; color: var(--ink-tertiary); text-align: center; margin-top: 4px; font-style: italic;">FIG 2.1 — Live Obsidian Knowledge Graph & Directed Vector Vault</figcaption>
+              </figure>
+
+              <div class="project-card__editor-note" style="margin: var(--space-3) 0;">
+                <span class="editor-note__label">EDITOR'S NOTE</span>
+                <p class="editor-note__text">Eliminated context switching by turning personal SOPs and workflows into a machine-readable knowledge graph.</p>
+              </div>
+
+              <div class="project-card__tech">
+                <span class="tech-label">TECHNOLOGY</span>
+                <span class="tech-list">Obsidian · Markdown Graph · LLM Prompts · n8n</span>
+              </div>
+
+              <div style="margin-top: var(--space-3);">
+                <a href="projects/" class="project-link">Explore Architecture →</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Column 3: Secondary Dispatches (Hidden on Small Mobile Screens) -->
+          <div class="broadsheet-col hide-on-mobile">
+            <article class="broadsheet-story">
+              <div class="broadsheet-story__meta">
+                <span>FULL-STACK PLATFORM</span>
+                <span class="project-card__issue">ISSUE 04</span>
+              </div>
+              <h3 class="broadsheet-story__title">Recto - Social Platform for Book Readers</h3>
+              <div class="broadsheet-story__byline">By Rehan Halai · Published July 2026</div>
+              <p class="broadsheet-story__desc">A social platform built for serious readers ("Letterboxd for books"). Log reading progress, publish book posts, build curated reading lists, follow trusted readers, and discover trending books in a feed styled with a warm parchment aesthetic.</p>
+
+              <div class="project-card__tech">
+                <span class="tech-label">TECHNOLOGY</span>
+                <span class="tech-list">Next.js 16 · NestJS 11 · Drizzle · PostgreSQL</span>
+              </div>
+
+              <div style="margin-top: var(--space-2); display: flex; gap: var(--space-3); flex-wrap: wrap;">
+                <a href="https://github.com/rehanhalai/recto" target="_blank" class="project-link">GitHub Repo →</a>
+                <a href="https://recto.social" target="_blank" class="project-link project-link--secondary">recto.social ↗</a>
+              </div>
+            </article>
+
+            <article class="broadsheet-story">
+              <div class="broadsheet-story__meta">
+                <span>APPLIED AI & VISION</span>
+                <span class="project-card__issue">ISSUE 05</span>
+              </div>
+              <h3 class="broadsheet-story__title">Customer Support RAG Bot</h3>
+              <div class="broadsheet-story__byline">By Rehan Halai · Published July 2026</div>
+              <p class="broadsheet-story__desc">Slack chatbot powered by vector semantic search and OpenAI models, resolving support tickets automatically.</p>
+
+              <div class="project-card__tech">
+                <span class="tech-label">TECHNOLOGY</span>
+                <span class="tech-list">OpenAI · Pinecone · TypeScript</span>
+              </div>
+
+              <div style="margin-top: var(--space-2);">
+                <a href="projects/" class="project-link">Inspect Source →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <hr class="section-divider" style="margin-bottom: var(--space-12);" />
+
+      <!-- ============================================================
+           FEATURED CASE STUDY SPOTLIGHT
+           ============================================================ -->
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: var(--space-6); border-bottom: 1px solid var(--border); padding-bottom: var(--space-3);">
+          <p class="section-label" style="border: none; padding: 0; margin: 0;">Featured Case Study</p>
+          <a href="case-studies/" class="link-hover" style="font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600;">Read All Case Studies →</a>
+        </div>
+
+        <article class="case-study-article" style="margin-bottom: 0;">
+          <header class="case-study-article__header">
+            <div class="case-study-article__meta">
+              <span>SPECIAL REPORT • VOL. III • ISSUE 01</span>
+              <span style="color: var(--accent); font-weight: 700;">FEATURED ANALYSIS</span>
+            </div>
+            <h3 class="case-study-article__headline" style="font-size: 1.5rem;">Removing the Human Duct Tape: Automating Multi-System Lead Triage</h3>
+            <div class="project-card__byline" style="margin-bottom: var(--space-3);">By Rehan Halai · Published July 2026</div>
+            <p class="case-study-article__subhead">How a custom n8n + API pipeline eliminated 20 hours a week of manual spreadsheet copy-pasting for a scaling sales team.</p>
+          </header>
+
+          <div class="newspaper-stat-grid" style="margin: var(--space-4) 0;">
+            <div class="stat-card">
+              <div class="stat-card__val">60 HRS</div>
+              <div class="stat-card__label">Monthly Time Saved</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__val">0 SEC</div>
+              <div class="stat-card__label">Lead Route Delay</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__val">100%</div>
+              <div class="stat-card__label">Audit Logging</div>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--space-6); text-align: right;">
+            <a href="case-studies/#case-1" class="hero-cta" style="display: inline-flex; align-items: center; gap: 6px;">
+              Read Full Special Report <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+      </div>
+
     </section>
 
     <!-- ============================================================
