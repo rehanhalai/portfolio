@@ -170,8 +170,18 @@
   margin-bottom: var(--space-2);
 }
 
+/* --- PROJECTS GRID LAYOUT --- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+  margin-bottom: var(--space-12);
+  align-items: stretch;
+}
+
 /* --- NEWSPAPER CLIPPING CARD (COMPACT PRINT BORDERS) --- */
 .project-card {
+  height: 100%;
   background: var(--bg);
   border-top: 1px solid #3e3b37;
   border-left: 1px solid #3e3b37;
@@ -353,6 +363,11 @@
 }
 
 @media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
   .broadsheet-page {
     grid-template-columns: 1fr;
     border-top: 2px solid var(--ink);

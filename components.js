@@ -8,8 +8,7 @@ class SiteHeader extends HTMLElement {
       <header class="header" role="banner">
         <h1 class="wordmark"><a href="${rootPrefix}index.html" style="color: inherit; text-decoration: none;">Rehan Halai <span class="wordmark__secondary">/ Automation</span></a></h1>
         <nav class="header__nav" aria-label="Main Navigation">
-          <a href="${rootPrefix}index.html#main-work" class="link-hover">Work</a>
-          <a href="${rootPrefix}case-studies/" class="link-hover">Studies</a>
+          <a href="${rootPrefix}projects/" class="link-hover">Work</a>
           <a href="${rootPrefix}index.html#about" class="link-hover">About</a>
           <a href="#contact" class="link-hover">Contact</a>
         </nav>
