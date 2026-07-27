@@ -1,0 +1,249 @@
+/* ============================================================
+   REHAN HALAI — CASE STUDIES (SPECIAL REPORTS) STYLESHEET
+   Authentic broadsheet newsprint styling for case studies
+   ============================================================ */
+
+/* --- HERO BANNER --- */
+.case-studies-hero {
+  padding: var(--space-8) 0 var(--space-6);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: var(--space-8);
+  text-align: center;
+}
+
+.case-studies-hero__stamp {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 2px 8px;
+  margin-bottom: var(--space-3);
+  font-weight: 600;
+}
+
+.case-studies-hero__title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.1;
+  margin-bottom: var(--space-3);
+  text-transform: uppercase;
+}
+
+.case-studies-hero__desc {
+  font-family: var(--font-mono);
+  font-size: 0.9375rem;
+  color: var(--ink);
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* --- CASE STUDY ARTICLE (BROADSHEET SPECIAL REPORT) --- */
+.case-study-article {
+  background: var(--bg);
+  border: 1px solid var(--ink);
+  padding: var(--space-8);
+  margin-bottom: var(--space-12);
+  position: relative;
+  box-shadow: 4px 4px 0px rgba(26, 23, 18, 0.08);
+}
+
+.case-study-article__header {
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+.case-study-article__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--ink-secondary);
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-3);
+  font-weight: 600;
+}
+
+.case-study-article__headline {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.2;
+  margin-bottom: var(--space-3);
+}
+
+.case-study-article__subhead {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  color: #26221c;
+  line-height: 1.55;
+}
+
+/* STATS HIGHLIGHT GRID (NEWSPAPER METRICS CALLOUT) */
+.newspaper-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-4);
+  margin: var(--space-6) 0;
+}
+
+.stat-card {
+  border: 1px solid var(--ink);
+  background: var(--bg-panel);
+  padding: var(--space-4);
+  text-align: center;
+}
+
+.stat-card__val {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1.1;
+  margin-bottom: var(--space-1);
+}
+
+.stat-card__label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--ink);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+/* PROBLEM VS SOLUTION COMPARISON GRID */
+.problem-solution-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+  margin: var(--space-8) 0;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  padding: var(--space-6) 0;
+}
+
+.ps-box {
+  padding: var(--space-4);
+  background: var(--bg-panel);
+  border: 1px solid var(--ink);
+}
+
+.ps-box--problem {
+  border-left: 4px solid var(--ink-secondary);
+}
+
+.ps-box--solution {
+  border-left: 4px solid var(--accent);
+}
+
+.ps-box__title {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-3);
+  font-weight: 700;
+}
+
+.ps-box--problem .ps-box__title { color: var(--ink-secondary); }
+.ps-box--solution .ps-box__title { color: var(--accent); }
+
+.ps-box__desc {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+/* SYSTEM ARCHITECTURE DIAGRAM BOX */
+.architecture-box {
+  background: var(--bg-panel);
+  border: 1px solid var(--ink);
+  padding: var(--space-6);
+  margin: var(--space-6) 0;
+}
+
+.architecture-box__title {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-secondary);
+  font-weight: 700;
+  margin-bottom: var(--space-4);
+}
+
+.flow-pipeline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.flow-node {
+  background: var(--bg);
+  border: 1px solid var(--ink);
+  padding: var(--space-3) var(--space-4);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--ink);
+  text-align: center;
+  flex: 1;
+  min-width: 130px;
+}
+
+.flow-arrow {
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-weight: 700;
+}
+
+/* ARTICLE BODY TEXT */
+.case-study-body {
+  font-family: var(--font-mono);
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--ink);
+}
+
+.case-study-body p {
+  margin-bottom: var(--space-4);
+}
+
+.editorial-quote {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.3rem;
+  font-style: italic;
+  color: var(--ink);
+  border-left: 3px solid var(--accent);
+  padding-left: var(--space-4);
+  margin: var(--space-6) 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .problem-solution-grid {
+    grid-template-columns: 1fr;
+  }
+  .flow-pipeline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .flow-arrow {
+    text-align: center;
+    transform: rotate(90deg);
+    margin: var(--space-1) 0;
+  }
+}

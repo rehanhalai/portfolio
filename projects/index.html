@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Projects Directory — Rehan Halai</title>
+  <meta name="description" content="Projects, tools, and automation systems developed by Rehan Halai. Workflow automation, AI agents, and web applications." />
+
+  <!-- OG Tags -->
+  <meta property="og:title" content="Projects Directory — Rehan Halai" />
+  <meta property="og:description" content="Browse business automation workflows, AI agents, and custom tools built by Rehan Halai." />
+  <meta property="og:type" content="website" />
+
+  <script src="../components.js"></script>
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="stylesheet" href="../styles/projects.css" />
+</head>
+<body>
+
+  <!-- Skip to content -->
+  <a href="#main-projects" class="skip-link">Skip to main content</a>
+
+  <!-- Header Web Component -->
+  <site-header></site-header>
+
+  <div class="site-container">
+    <main id="main-projects">
+
+      <!-- Hero Section -->
+      <section class="projects-hero fade-entry">
+        <p class="projects-hero__subtitle">DISPATCHES & TRADE JOURNAL ARCHIVE</p>
+        <h1 class="projects-hero__title">Selected Projects & Systems</h1>
+        <p class="projects-hero__desc">An index of backend workflow pipelines, AI agents, custom web apps, and internal tools engineered to eliminate operational friction.</p>
+      </section>
+
+      <!-- Category Filter Bar -->
+      <div class="filter-bar fade-entry" id="filter-bar" role="tablist" aria-label="Project Categories">
+        <button class="filter-btn active" data-category="all" role="tab" aria-selected="true">All Dispatches (5)</button>
+        <button class="filter-btn" data-category="automation" role="tab" aria-selected="false">Workflow Automation</button>
+        <button class="filter-btn" data-category="ai" role="tab" aria-selected="false">AI & Second Brain</button>
+        <button class="filter-btn" data-category="web" role="tab" aria-selected="false">Full-Stack Platforms</button>
+        <button class="filter-btn" data-category="tools" role="tab" aria-selected="false">Internal Tools & PWA</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid fade-entry" id="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card" data-category="automation">
+          <div class="project-card__header">
+            <div class="project-card__meta">
+              <span>WORKFLOW AUTOMATION</span>
+              <span class="project-card__issue">ISSUE 01</span>
+            </div>
+            <div class="project-card__rule"></div>
+            
+            <h2 class="project-card__title">Client Onboarding & AI Business Audit Automation</h2>
+            <div class="project-card__byline">By Rehan Halai · Published July 2026</div>
+
+            <p class="project-card__desc">A production-tested post-deposit onboarding & business intelligence pipeline. Ingests 9-field client intake forms via n8n Form, executes a cold background web audit using Google Gemini AI, automatically provisions multi-tier Google Drive workspace folders (`01 Audit`, `02 Solution`, `03 Deliverables`), converts markdown briefs into binary files, and dispatches custom welcome emails & instant Telegram alerts.</p>
+            
+            <div class="project-card__rule"></div>
+
+            <div class="project-card__editor-note">
+              <span class="editor-note__label">EDITOR'S NOTE</span>
+              <p class="editor-note__text">Automated 100% of post-deposit client setup with instant workspace folder provisioning.</p>
+            </div>
+
+            <div class="project-card__rule"></div>
+
+            <div class="project-card__tech">
+              <span class="tech-label">TECHNOLOGY</span>
+              <span class="tech-list">n8n · Google Gemini AI · Google Drive API · Gmail</span>
+            </div>
+            
+            <div class="project-card__rule"></div>
+          </div>
+          
+          <div class="project-card__actions">
+            <a href="https://github.com/rehanhalai" target="_blank" class="project-link">Inspect Source →</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card" data-category="ai">
+          <div class="project-card__header">
+            <div class="project-card__meta">
+              <span>APPLIED AI & VISION</span>
+              <span class="project-card__issue">ISSUE 02</span>
+            </div>
+            <div class="project-card__rule"></div>
+            
+            <h2 class="project-card__title">Obsidian-Powered Business Operating System</h2>
+            <div class="project-card__byline">By Rehan Halai · Published July 2026</div>
+
+            <div style="display: flex; gap: var(--space-3); align-items: flex-start; margin: var(--space-2) 0;">
+              <div style="flex: 1;">
+                <p class="project-card__desc" style="margin-bottom: 0;">An AI-agnostic Second Brain knowledge graph structured in Obsidian markdown. Maps business domain expertise, automates routine operating SOPs, and feeds clean context vectors to Gemini, Claude, and local AI agents.</p>
+              </div>
+              <figure style="margin: 0; flex-shrink: 0; width: 110px;">
+                <img src="../assets/images/obsidian-valut.webp" alt="Obsidian Knowledge Graph Vault" style="width: 110px; height: 110px; object-fit: cover; border: 1px solid var(--ink); padding: 2px; background: var(--bg-panel); filter: contrast(105%) sepia(10%); display: block;" />
+                <figcaption style="font-family: var(--font-mono); font-size: 0.55rem; color: var(--ink-tertiary); text-align: center; margin-top: 3px; font-style: italic;">FIG 2.1 — Knowledge Graph</figcaption>
+              </figure>
+            </div>
+
+            <div class="project-card__rule"></div>
+
+            <div class="project-card__editor-note">
+              <span class="editor-note__label">EDITOR'S NOTE</span>
+              <p class="editor-note__text">Eliminated context switching by converting personal SOPs and workflows into a machine-readable knowledge graph.</p>
+            </div>
+
+            <div class="project-card__rule"></div>
+
+            <div class="project-card__tech">
+              <span class="tech-label">TECHNOLOGY</span>
+              <span class="tech-list">Obsidian · Markdown Graph · LLM Prompts · n8n</span>
+            </div>
+
+            <div class="project-card__rule"></div>
+          </div>
+
+          <div class="project-card__actions">
+            <a href="https://github.com/rehanhalai" target="_blank" class="project-link">Explore Architecture →</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card" data-category="tools">
+          <div class="project-card__header">
+            <div class="project-card__meta">
+              <span>MOBILE PWA • INTERNAL OPS</span>
+              <span class="project-card__issue">ISSUE 03</span>
+            </div>
+            <div class="project-card__rule"></div>
+
+            <h2 class="project-card__title">Vichar Bhandar — PWA Thought Capture Engine</h2>
+            <div class="project-card__byline">By Rehan Halai · Published July 2026</div>
+
+            <p class="project-card__desc">A mobile-first Progressive Web App built for frictionless thought dumping, task capture, and automated web push reminder alerts powered by Edge SQLite and Vercel Cron.</p>
+
+            <div class="project-card__rule"></div>
+
+            <div class="project-card__editor-note">
+              <span class="editor-note__label">EDITOR'S NOTE</span>
+              <p class="editor-note__text">Frictionless quick capture PWA with Vercel Cron Web Push notification scheduling.</p>
+            </div>
+
+            <div class="project-card__rule"></div>
+
+            <div class="project-card__tech">
+              <span class="tech-label">TECHNOLOGY</span>
+              <span class="tech-list">Next.js 14 · Turso SQLite · Drizzle ORM · PWA</span>
+            </div>
+
+            <div class="project-card__rule"></div>
+          </div>
+
+          <div class="project-card__actions">
+            <a href="https://github.com/rehanhalai/vichar-bhandar" target="_blank" class="project-link">GitHub Repo →</a>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card" data-category="web">
+          <div class="project-card__header">
+            <div class="project-card__meta">
+              <span>FULL-STACK PLATFORM</span>
+              <span class="project-card__issue">ISSUE 04</span>
+            </div>
+            <div class="project-card__rule"></div>
+
+            <h2 class="project-card__title">Recto — Social Platform for Book Readers</h2>
+            <div class="project-card__byline">By Rehan Halai · Published July 2026</div>
+
+            <p class="project-card__desc">A social platform built for serious readers ("Letterboxd for books"). Log reading progress, publish book posts, build curated reading lists, follow trusted readers, and discover trending books in a feed styled with a warm parchment aesthetic.</p>
+
+            <div class="project-card__rule"></div>
+
+            <div class="project-card__editor-note">
+              <span class="editor-note__label">EDITOR'S NOTE</span>
+              <p class="editor-note__text">Built around social reading, posts, curated lists, and bookish parchment aesthetics.</p>
+            </div>
+
+            <div class="project-card__rule"></div>
+
+            <div class="project-card__tech">
+              <span class="tech-label">TECHNOLOGY</span>
+              <span class="tech-list">Next.js 16 · NestJS 11 · Drizzle · PostgreSQL</span>
+            </div>
+
+            <div class="project-card__rule"></div>
+          </div>
+
+          <div class="project-card__actions">
+            <a href="https://github.com/rehanhalai/recto" target="_blank" class="project-link">GitHub Repo →</a>
+            <a href="https://recto.social" target="_blank" class="project-link project-link--secondary">recto.social ↗</a>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card" data-category="web">
+          <div class="project-card__header">
+            <div class="project-card__meta">
+              <span>EVENT & COMMUNITY PLATFORM</span>
+              <span class="project-card__issue">ISSUE 05</span>
+            </div>
+            <div class="project-card__rule"></div>
+
+            <h2 class="project-card__title">SideQuests — Real-World Event & Social Platform</h2>
+            <div class="project-card__byline">By Rehan Halai · Published July 2026</div>
+
+            <p class="project-card__desc">A community event platform enabling clubs and organizers to host social meetups, board game sessions, and local cafe events across Pune. Engineered frontend features in React and REST API microservices in NestJS.</p>
+
+            <div class="project-card__rule"></div>
+
+            <div class="project-card__editor-note">
+              <span class="editor-note__label">EDITOR'S NOTE</span>
+              <p class="editor-note__text">Contributed to core MVP development, API architecture, and overall product stability during Full Stack Engineering internship.</p>
+            </div>
+
+            <div class="project-card__rule"></div>
+
+            <div class="project-card__tech">
+              <span class="tech-label">TECHNOLOGY</span>
+              <span class="tech-list">React · NestJS · PostgreSQL</span>
+            </div>
+
+            <div class="project-card__rule"></div>
+          </div>
+
+          <div class="project-card__actions">
+            <a href="https://www.sidequests.social/" target="_blank" class="project-link">sidequests.social ↗</a>
+          </div>
+        </article>
+
+      </div><!-- .projects-grid -->
+
+    </main>
+
+    <!-- Footer Web Component -->
+    <site-footer></site-footer>
+
+  </div><!-- .site-container -->
+
+  <script defer src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+  <script defer src="../script.js"></script>
+  
+  <!-- Inline Category Filter Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const cards = document.querySelectorAll('.project-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Remove active state
+          filterBtns.forEach(b => {
+            b.classList.remove('active');
+            b.setAttribute('aria-selected', 'false');
+          });
+          btn.classList.add('active');
+          btn.setAttribute('aria-selected', 'true');
+
+          const filterCategory = btn.getAttribute('data-category');
+
+          cards.forEach(card => {
+            if (filterCategory === 'all' || card.getAttribute('data-category') === filterCategory) {
+              card.classList.remove('is-hidden');
+            } else {
+              card.classList.add('is-hidden');
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
